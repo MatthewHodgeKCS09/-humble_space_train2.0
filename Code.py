@@ -11,7 +11,6 @@ class Appointment:
 class Schedule:
     def __init__(self):
         self.appointments = []
-
     def add_appointment(self):
         time = input('Chose appointment time: ')
         self.appointments.append(time)
@@ -26,10 +25,13 @@ class Payment:
         self.payments.append(charge)
         print(f"Payment of {charge} confirmed.")
 
+#Appointment
 appt_1 = Appointment()
 appt_1.print_customer_name()
+#Schedule
 my_schedule = Schedule()
 my_schedule.add_appointment()
+#Payment
 my_payment = Payment()
 my_payment.add_payments()
 
